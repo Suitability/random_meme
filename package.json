@@ -1,0 +1,26 @@
+{
+  "name": "random_meme",
+  "version": "1.0.0",
+  "description": "Returns A Promise For A Random Meme",
+  "license": "MIT",
+  "author": {
+    "name": "Ahmad",
+    "email": "",
+    "url": "https://github.com/Descendings"
+  },
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Descendings/random_meme"
+  },
+  "scripts": {
+    "start": "node --harmony src/test.js"
+  },
+  "dependencies": {
+    "cheerio": "0.22.0",
+    "node-fetch": "1.6.3"
+  },
+  "devDependencies": {
+    "eslint": "3.9.1"
+  }
+}

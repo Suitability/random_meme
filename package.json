@@ -14,7 +14,7 @@
     "url": "https://github.com/Descendings/random_meme"
   },
   "scripts": {
-    "start": "node --harmony src/test.js"
+    "start": "node --harmony src/index.js"
   },
   "dependencies": {
     "cheerio": "0.22.0",

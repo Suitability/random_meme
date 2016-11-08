@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
 
-module.exports = async function FML() {
+module.exports = async function Meme() {
 	const url = 'http://www.memes.com/random';
 	let body;
 	try {
@@ -18,6 +18,9 @@ module.exports = async function FML() {
 		.children()
 		.first()
 		.children()[0].attribs.src;
+		meme = meme.split('/');
+		meme = meme[5];
+		meme = `http://images.memes.com/meme/${meme}`;
 	} catch (err) {
 		return console.error('Error Getting Meme', err);
 	}
